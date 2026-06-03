@@ -1,0 +1,66 @@
+:root {
+    /* Brand Colors (Unsri & Halal Identity) */
+    --color-primary: #003527;              /* Deep Forest Green */
+    --color-primary-rgb: 0, 53, 39;
+    --color-primary-container: #064e3b;    /* Medium Emerald Green */
+    --color-primary-container-rgb: 6, 78, 59;
+    --color-secondary: #006c49;            /* Emerald Green Accent */
+    --color-secondary-rgb: 0, 108, 73;
+    --color-secondary-container: #6cf8bb;
+    
+    /* Gold/Yellow Accents (Unsri Logo Core Colors) */
+    --color-tertiary: #735c00;             /* Darker Gold */
+    --color-tertiary-container: #cca72f;   /* Vibrant Gold/Yellow */
+    --color-tertiary-container-rgb: 204, 167, 47;
+    --color-tertiary-fixed-dim: #e9c349;
+    --color-tertiary-fixed: #ffe088;
+
+    /* Neutrals */
+    --color-background: #f7f9fb;           /* Off-White Mint */
+    --color-on-background: #191c1e;        /* Dark Grey text */
+    --color-surface: #ffffff;              /* Pure White cards */
+    --color-surface-rgb: 255, 255, 255;
+    --color-surface-dim: #d8dadc;          /* Light grey line details */
+    --color-surface-container: #eceef0;
+    --color-surface-container-low: #f2f4f6;
+    --color-surface-container-highest: #e0e3e5;
+    --color-on-surface: #191c1e;
+    --color-on-surface-variant: #404944;
+    --color-outline: #707974;
+    --color-outline-variant: #bfc9c3;
+
+    /* Purple Accent (Halal Indonesia branding color) */
+    --color-halal-purple: #672d8a;
+
+    /* Fonts */
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+
+    /* Spacing Units */
+    --space-base: 6px;
+    --space-sm: 6px;
+    --space-md: 12px;
+    --space-lg: 24px;
+    --space-xl: 40px;
+    --space-xxl: 64px;
+    --container-max: 1200px;
+    --margin-desktop: 32px;
+    --margin-mobile: 16px;
+    --gutter: 20px;
+
+    /* Radii */
+    --radius-sm: 4px;
+    --radius-default: 8px;
+    --radius-md: 12px;
+    --radius-xl: 16px;
+    --radius-xxl: 24px;
+    --radius-full: 9999px;
+
+    /* Shadows & Transitions */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 8px 32px rgba(0, 53, 39, 0.06);
+    --shadow-lg: 0 16px 48px rgba(0, 53, 39, 0.12);
+    --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
