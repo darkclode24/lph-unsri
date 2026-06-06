@@ -497,12 +497,24 @@
         rgba(0, 108, 73, 0.15) 100%
     );
     background-size: 100% 200px;
-    animation: sleek-flow 2.5s linear infinite;
+    animation: sleek-flow 2.4s linear infinite;
     z-index: 1;
 }
 
 .sleek-hierarchy-item:last-child::before {
     display: none;
+}
+
+.sleek-hierarchy-item:nth-child(1)::before {
+    animation-delay: 0s;
+}
+
+.sleek-hierarchy-item:nth-child(2)::before {
+    animation-delay: -1.6s;
+}
+
+.sleek-hierarchy-item:nth-child(3)::before {
+    animation-delay: -0.8s;
 }
 
 @keyframes sleek-flow {
