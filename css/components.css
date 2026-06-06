@@ -126,18 +126,20 @@
 .mobile-drawer {
     position: fixed;
     top: 72px;
-    right: -100%;
+    right: -300px;
     width: 280px;
     height: calc(100vh - 72px);
     background-color: var(--color-surface);
     box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
     z-index: 99;
     padding: var(--space-lg);
-    transition: right var(--transition-normal);
+    transition: right var(--transition-normal), visibility var(--transition-normal);
+    visibility: hidden;
 }
 
 .mobile-drawer.open {
     right: 0;
+    visibility: visible;
 }
 
 .mobile-nav-list {
