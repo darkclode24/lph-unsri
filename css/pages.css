@@ -489,13 +489,29 @@
     bottom: -20px;
     left: 14px;
     width: 2px;
-    background-color: var(--color-secondary);
-    opacity: 0.3;
+    background: linear-gradient(to bottom, 
+        rgba(0, 108, 73, 0.15) 0%, 
+        rgba(0, 108, 73, 0.15) 25%, 
+        var(--color-secondary) 50%, 
+        rgba(0, 108, 73, 0.15) 75%, 
+        rgba(0, 108, 73, 0.15) 100%
+    );
+    background-size: 100% 200px;
+    animation: sleek-flow 2.5s linear infinite;
     z-index: 1;
 }
 
 .sleek-hierarchy-item:last-child::before {
     display: none;
+}
+
+@keyframes sleek-flow {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 200px;
+    }
 }
 
 .sleek-hierarchy-number {
