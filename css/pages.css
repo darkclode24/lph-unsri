@@ -420,6 +420,51 @@
     text-align: left;
 }
 
+/* Sleek Pillars Grid */
+.sleek-pillars-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 8px;
+}
+
+.sleek-pillar-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.sleek-pillar-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: var(--radius-default);
+    background-color: rgba(0, 108, 73, 0.08);
+    color: var(--color-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 1px solid rgba(0, 108, 73, 0.15);
+}
+
+.sleek-pillar-icon .material-symbols-outlined {
+    font-size: 22px;
+}
+
+.sleek-pillar-content h4 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 4px;
+}
+
+.sleek-pillar-content p {
+    font-size: 0.8125rem;
+    color: var(--color-on-surface-variant);
+    line-height: 1.45;
+    margin-bottom: 0;
+}
+
 /* Hierarchy Step-list */
 .sleek-hierarchy-list {
     list-style: none;
