@@ -729,12 +729,49 @@
 /* ==========================================================================
    Page: Alur Sertifikasi (Timeline/Timeline Horizontal/Infographics)
    ========================================================================== */
-.alur-infographic-wrapper {
+/* Side-by-Side Alur Grid (Image column wider than timeline) */
+.alur-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: start;
+    max-width: var(--container-max);
+    margin: 0 auto;
+}
+
+.alur-visual {
+    width: 100%;
+}
+
+.visual-sticky-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-outline-variant);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-md);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 0 auto var(--space-lg) auto;
-    max-width: 800px;
+    gap: 16px;
+    transition: box-shadow var(--transition-normal);
+}
+
+.visual-sticky-card:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+.visual-card-title {
+    font-size: 1.25rem;
+    color: var(--color-primary);
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.visual-card-desc {
+    font-size: 0.875rem;
+    color: var(--color-on-surface-variant);
+    margin: 0;
+    line-height: 1.5;
 }
 
 .alur-img {
@@ -742,6 +779,33 @@
     box-shadow: var(--shadow-sm);
     border: 1px solid var(--color-outline-variant);
     max-width: 100%;
+    height: auto;
+    display: block;
+    transition: transform var(--transition-normal);
+}
+
+.zoomable-image-wrapper:hover .alur-img {
+    transform: scale(1.02);
+}
+
+.visual-download-btn {
+    width: 100%;
+    margin-top: 8px;
+}
+
+@media (min-width: 992px) {
+    .alur-grid {
+        /* Image column (left) is wider than timeline column (right) */
+        grid-template-columns: 7fr 5fr;
+    }
+    .alur-visual {
+        position: sticky;
+        top: 96px; /* Stick below nav bar */
+        z-index: 10;
+    }
+    .alur-timeline-container .timeline-flow {
+        max-width: 100%;
+    }
 }
 
 .timeline-accessible-title {
